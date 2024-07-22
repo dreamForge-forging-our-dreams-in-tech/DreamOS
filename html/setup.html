@@ -17,7 +17,7 @@
 <body>
     <template-header logIn="false"></template-header>
     <list-viewer id="listOfPermissions">
-        <li>Grant WriteSystemSettings permission</li>
+        <li if="writeSettings">Grant WriteSystemSettings permission</li>
     </list-viewer>
 
     <script type='module' src="../js/setup.js" defer></script>

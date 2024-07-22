@@ -1,3 +1,7 @@
 list-viewer {
     width:100%;
 }
+
+list-viewer li {
+    width:100%;
+}

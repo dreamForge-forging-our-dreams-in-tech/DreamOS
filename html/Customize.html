@@ -11,17 +11,18 @@
     <link rel="icon" type="image/x-icon" href="../assets/images/flat,750x,075,f-pad,750x1000,f8f8f8.u3.jpg">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/setup.css">
-    <title>Setup</title>
+    <title>Customize</title>
 </head>
 
 <body>
     <template-header logIn="false"></template-header>
 
     <button id="reset" class="material-symbols-outlined">restart_alt</button>
-
+    
     <list-viewer id="listOfPermissions">
-        <li if="writeSettings">Grant WriteSystemSettings permission</li>
-        <li if="customize">Customize NexOS</li>
+        <li if="wallpaper">Set your wallpaper</li>
+        <li if="position">Set color extraction position</li>
+        <li if="color">Set theme color</li>
     </list-viewer>
 
     <script type='module' src="../js/setup.js" defer></script>

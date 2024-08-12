@@ -6,6 +6,10 @@ let writePerm = document.getElementById('writeSettings');
 
 perms.addEventListener('itemSelected', function () {
     try {
+        if(perms.getAttribute('value') == 'customize') {
+            window.location.href = '../html/Customize.html';
+        }
+        
         window.AppInventor.setWebViewString(perms.getAttribute('value'));
     } catch (e) { }
 });

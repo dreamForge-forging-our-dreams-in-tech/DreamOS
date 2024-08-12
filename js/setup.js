@@ -6,7 +6,7 @@ let writePerm = document.getElementById('writeSettings');
 
 perms.addEventListener('itemSelected', function () {
     try {
-        if(perms.getAttribute('value') == 'customize') {
+        if(perms.getAttribute('value') == 'Customize NexOS') {
             window.location.href = '../html/Customize.html';
         }
 

@@ -9,8 +9,12 @@ list-viewer {
     right:8px;
 
     width: 35px;
-    height:35px;
+    height: 35px;
 
-    line-height:36px !important;
+    color:var(--primaryTextColor);
+
+    padding:0px !important;
+
+    line-height:35.5px !important;
     text-align:center;
 }

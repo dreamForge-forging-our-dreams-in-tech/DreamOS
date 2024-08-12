@@ -18,4 +18,4 @@ let int = window.setInterval(function () { // checks for any messages sent from 
     } catch(e) {
         console.error(e);
     }
-},1);
+},1000);

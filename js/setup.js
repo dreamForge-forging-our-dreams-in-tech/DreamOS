@@ -10,8 +10,9 @@ perms.addEventListener('itemSelected', function () {
 
 window.setInterval(function () { // checks for any messages sent from the app.
     try {
+        alert(window.AppInventor.getWEbViewString()['canWriteSettings'])
         if(window.AppInventor.getWEbViewString()['canWriteSettings']) {
-            writePerm.setAttriute('disabled', true);
+            writePerm.setAttriute('disabled', 'true');
         }
     } catch(e) {}
 },1);

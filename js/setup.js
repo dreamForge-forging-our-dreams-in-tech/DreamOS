@@ -14,5 +14,7 @@ window.setInterval(function () { // checks for any messages sent from the app.
         if(window.AppInventor.getWEbViewString()['canWriteSettings']) {
             writePerm.setAttriute('disabled', 'true');
         }
-    } catch(e) {}
+    } catch(e) {
+        alert(e)
+    }
 },1);

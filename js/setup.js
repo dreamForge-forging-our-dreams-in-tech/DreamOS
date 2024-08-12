@@ -9,7 +9,7 @@ perms.addEventListener('itemSelected', function () {
         if(perms.getAttribute('value') == 'customize') {
             window.location.href = '../html/Customize.html';
         }
-        
+
         window.AppInventor.setWebViewString(perms.getAttribute('value'));
     } catch (e) { }
 });
@@ -28,8 +28,6 @@ let int = window.setInterval(function () { // checks for any messages sent from 
 
 reset.addEventListener('click', function () {
     try {
-        if (confirm('Are you sure you want to restart setup?')) {
             window.AppInventor.setWebViewString('restart');
-        }
     } catch (e) { }
 });

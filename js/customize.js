@@ -46,7 +46,7 @@ async function setWallpaper() {
       };
 
     // open file picker, destructure the one element returned array
-    fileHandle = await window.showOpenFilePicker(pickerOpts);
+    {fileHandle} = await window.showOpenFilePicker(pickerOpts);
     document.body.style.backgroundImage = 'url("' + fileHandle.getFile() + '")';
 
     // run code with our fileHandle

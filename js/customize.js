@@ -5,11 +5,10 @@ let reset = document.getElementById('reset');
 
 perms.addEventListener('itemSelected', function () {
     try {
-        if(perms.getAttribute('value') == 'customize') {
-            window.location.href = '../html/Customize.html';
-        }
+        if (perms.getAttribute('value') == 'wallpaper') {
+            setWallpaper();
 
-        window.AppInventor.setWebViewString(perms.getAttribute('value'));
+        }
     } catch (e) { }
 });
 
@@ -26,6 +25,21 @@ let int = window.setInterval(function () { // checks for any messages sent from 
 
 reset.addEventListener('click', function () {
     try {
-            window.AppInventor.setWebViewString('restart');
+        window.AppInventor.setWebViewString('restart');
     } catch (e) { }
 });
+
+async function setWallpaper() {
+    let fileHandle;
+
+    const pickerOpts = {
+        excludeAcceptAllOption: true,
+        multiple: false,
+    };
+
+    // open file picker, destructure the one element returned array
+    fileHandle = await window.showOpenFilePicker(pickerOpts);
+    console.log(fileHandle);
+
+    // run code with our fileHandle
+}

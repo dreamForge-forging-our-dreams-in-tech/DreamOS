@@ -10,4 +10,7 @@ list-viewer {
 
     width: 35px;
     height:35px;
+
+    line-height:36px !important;
+    text-align:center;
 }

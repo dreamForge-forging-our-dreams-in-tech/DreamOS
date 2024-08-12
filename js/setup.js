@@ -12,7 +12,7 @@ let int = window.setInterval(function () { // checks for any messages sent from 
     try {
         console.log(window.AppInventor.getWebViewString())
         if(JSON.parse(window.AppInventor.getWebViewString())['canWriteSettings']) {
-            writePerm.setAttriute('disabled', 'true');
+            writePerm.setAttribute('disabled', 'true');
             clearInterval(int);
         }
     } catch(e) {

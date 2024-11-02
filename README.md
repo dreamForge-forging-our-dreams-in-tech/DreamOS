@@ -1,2 +1,2 @@
-# NexOS
-NexOS is a app that allows you to turn your old phone or tablet into a fully customizable smart display.
+# MyOS
+Welcome to MyOS, the OS that is completely yours, you can customize it however you want to.

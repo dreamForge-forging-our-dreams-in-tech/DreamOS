@@ -6,6 +6,7 @@
 }
 
 #quickSettingsPanel {
+    top:auto;
     bottom:50px;
 
 }

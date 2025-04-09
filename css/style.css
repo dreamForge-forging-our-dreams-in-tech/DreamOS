@@ -1,6 +1,15 @@
 #customization {
     position:fixed;
     bottom:8px;
-    right:8px;
+    right:0px;
     z-index:9999;
+}
+
+template-settings-drawer {
+    bottom:50px;
+
+}
+
+list-viewer li {
+    width: calc(100% - 16px);
 }

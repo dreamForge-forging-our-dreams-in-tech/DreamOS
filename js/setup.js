@@ -2,5 +2,3 @@ import { PichaiUX } from 'https://dreamforge-forging-our-dreams-in-tech.github.i
 
 let pichai = new PichaiUX(options);
 pichai.initialize();
-
-document.body.style.backgroundImage = 'none';

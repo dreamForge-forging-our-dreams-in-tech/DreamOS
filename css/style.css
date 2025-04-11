@@ -22,4 +22,7 @@ list-viewer li {
     border-width:0px;
 
     margin:auto;
+
+    background-color: var(--primary);
+    border-radius:10px;
 }
